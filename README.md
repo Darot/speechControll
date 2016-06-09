@@ -1,4 +1,4 @@
-# speechControll
+# Speech Control
 
 On work in Debian-based systems:
 
