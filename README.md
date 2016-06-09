@@ -24,19 +24,25 @@ After rebooting, run pulseaudio --kill, followed by jack_control start, to fix t
 
 
 ## Commom usage
-import speechrecogtion as sr
 
-r = sr.recognizer()
+```python
+import speech_recognition as sr
 
-TODO
+r = sr.Recognizer()
+with sr.Microphone() as source:                # use the default microphone as the audio source
+    audio = r.listen(source)                   # listen for the first phrase and extract it into audio data
+
+try:
+    print("You said " + r.recognize(audio))    # recognize speech using Google Speech Recognition
+except LookupError:                            # speech is unintelligible
+    print("Could not understand audio")
+```
 
 
-
-
-### References
+#### References
 
 https://pypi.python.org/pypi/SpeechRecognition/
-
+http://stackoverflow.com/questions/12239080/getting-started-with-speech-recognition-and-python
 
 
 # Issues in fedora
@@ -61,7 +67,7 @@ Short description(follow these commands):
 
 
 ## Debian-based 
-
+```
 sudo apt-get install python python3
 sudo apt-get install python-pip python3-pip
 sudo apt-get install flac
@@ -71,6 +77,6 @@ sudo dpkg-reconfigure -p high jackd2 and select “Yes”
 sudo adduser $(whoami) audio
 pulseaudio --kill
 jack_control start
-
+```
 ## Fedora
-
+To do this, beware that will be built in fedora
