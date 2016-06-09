@@ -42,10 +42,20 @@ except LookupError:                            # speech is unintelligible
 #### References
 
 https://pypi.python.org/pypi/SpeechRecognition/
+
 http://stackoverflow.com/questions/12239080/getting-started-with-speech-recognition-and-python
 
+#### Futher reading
+
+```
+http://www.nltk.org/
+```
 
 # Issues in fedora
+
+if you have troubleshooting using this in fedora 23 come free to add some information. 
+
+It  
  pip install hg+http://bitbucket.org/pygame/pygame
 
 # Install
