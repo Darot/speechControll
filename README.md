@@ -51,17 +51,11 @@ http://stackoverflow.com/questions/12239080/getting-started-with-speech-recognit
 http://www.nltk.org/
 ```
 
-# Issues in fedora
-
-if you have troubleshooting using this in fedora 23 come free to add some information. 
-
-It  
- pip install hg+http://bitbucket.org/pygame/pygame
 
 # Install
 Short description(follow these commands):
 
-    Install build dependencies (on linux):
+    Install build dependencies (on ubuntu):
 
     sudo apt-get build-dep python-pygame
 
@@ -88,5 +82,3 @@ sudo adduser $(whoami) audio
 pulseaudio --kill
 jack_control start
 ```
-## Fedora
-To do this, beware that will be built in fedora
